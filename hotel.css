@@ -1,0 +1,330 @@
+:root {
+    --primary-color: #060348;
+    --second-color: #fff;
+    --thirth-color: #8B8B8B;
+    --fourth-color: #3E58B5;
+    --h1-fontsize:2rem;
+    --h1-fontweight:bold;
+    --h2-fontsize:1.5rem;
+    --h2-fontweight:bold;
+    --h3-fontsize:1.5rem;
+    --h3-fontweight:medium;
+    --p-fontsize:1rem;
+    --p-fontfamily:Manrope;
+    --border-size: 0.0625rem;
+    --border-radius:0.9 rem
+}
+/*html{font-size:  10px};*/
+
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;   
+}
+header{
+    width: 100%;
+    height: 60px;
+    margin:auto;
+    padding: 20rem, 10rem;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--primary-color);
+}
+.profileimageedit{
+    width: 30px; 
+    height: 30px;
+    border-radius: 3rem;
+    margin-bottom: -7px;
+}
+
+.Name{
+    font-size: 50px; 
+    color:var(--second-color);
+    text-decoration: none;
+}
+header ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0px 10px;
+}
+header ul li a {
+    color:var(--second-color);
+    text-transform: none;
+    font-size: var(--p-fontsize);
+    text-decoration: none;
+}  
+
+
+
+
+.Container{
+    width: 100rem;
+    height: 25rem;
+    justify-content:center;
+    display: flex;
+    margin:1rem 15rem;
+    
+}
+.main-image{
+    width: auto;
+    height: auto;
+}
+.side-image{
+    width: 500px;
+    height: 187px;
+    margin: 0px;
+}
+.side-image2{
+    width: 500px;
+    height: 187px;
+    margin-top: -4px;
+}
+
+
+.Hotel h1{
+    font-size: var(--h1-fontsize);
+    font-weight: var(--h1-fontweight);
+    padding-left: 11rem;
+}
+.Hotel p{
+    font-size: var(--p-fontsize);
+    font-weight: var(--p-fontweight);
+    padding-left: 11rem;
+    color:var(--thirth-color);
+    line-height: 0.01rem;
+}
+.Hotel h3{
+    font-size: var(--h3-fontsize);
+    font-weight: var(--h3-fontweight);
+    padding-left: 11rem;
+    line-height: 0.01rem;
+}
+.Hotel a address{
+    font-size: var(--p-fontsize);
+    font-weight: var(--p-fontweight);
+    text-decoration: none;
+    padding-left: 11rem;
+    color:var(--thirth-color);
+    line-height: 0.01rem;
+}
+
+
+
+
+
+nav{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0rem 6rem;
+}
+nav ul li a{
+    font-size: var(--h1-fontsize);
+    font-weight: var(--h2-fontweight);
+    color: var(--primary-color);
+}
+nav ul li a:hover{
+    font-size: var(--h1-fontsize);
+    font-weight: var(--h2-fontweight);
+    color: var(--thirth-color);
+}
+nav ul li a :active{
+    font-size: var(--h1-fontsize);
+    font-weight: var(--h2-fontweight);
+    color: var(--primary-color);
+}
+
+
+
+
+
+
+.Roomlist{
+    display:grid;
+    justify-content: space-between;
+    display: flex;  
+    margin: 5rem 0rem;
+}
+.Biglist{
+    list-style: none;
+    border-style: solid;
+    border-width: 2px;
+    border-radius:15px;
+    margin: 0rem 2rem;
+}
+.Biglist h3{
+    margin-left: 1rem;
+}
+.hotelbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:7rem;
+    height: 2.5rem;
+    border-radius: 30px;
+    background-color: var(--fourth-color);
+    box-shadow: 0rem 0rem 0.5rem 0.5rem;
+    color: var(--second-color);
+    font-size: var(--h3-fontsize);
+}
+.hotelbox:hover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:7rem;
+    height: 2.5rem;
+    border-radius: 30px;
+    background-color: var(--primary-color);
+    box-shadow: 0rem 0rem 0.5rem 0.5rem;
+    color: var(--second-color);
+    font-size: var(--h3-fontsize);
+}
+
+.Biglist footer{
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    margin: 1rem 3rem;
+}
+.Biglist footer p{
+    font-size:var(--h3-fontsize);
+    font-weight:var(--h3-fontweight);
+}
+.Biglist footer h3{
+    color:var(--second-color);
+    font-size:var(--h2-fontsize);
+    font-weight:var(--h2-fontweight);
+}
+
+
+.room ul li img{
+    width: 23rem;
+    height:18rem;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+
+
+.scrollbox {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width:80%;
+    border:1rem solid var(--primary-color);
+    border-radius: 30px;
+    background-color: var(--primary-color);
+    color:var(--second-color);  
+    margin-left: 5rem;
+    font-size: var(--h3-fontsize);
+    font-weight: var(--h3-fontweight);
+}
+.scrollbox:hover{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width:80%;
+    border:1rem solid var(--fourth-color);
+    border-radius: 30px;
+    background-color: var(--fourth-color);
+    color:var(--second-color);  
+    margin-left: 5rem;
+    font-size: var(--h3-fontsize);
+    font-weight: var(--h3-fontweight); 
+}
+
+.information li{
+    margin-left: 8rem;
+}
+.information p{
+    margin-left: 7rem;
+}
+
+
+.amentities{
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.amentities section{
+    padding: 0 10rem;
+}
+.amentities aside{
+    padding: 0 10rem;
+}
+.amentities article{
+    padding: 0rem 10rem;
+}
+.amentities article div{
+    display: flex;
+    justify-content: left;
+    padding:0rem 1rem;
+}
+.amentities article div li{
+    list-style: none;   
+}
+
+
+.Hotelcomment{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+.comment{
+        margin-left: 5rem;
+        justify-content: left;
+        height: 15rem;
+}
+.comment p{
+    line-height: 0.5rem;
+}
+
+.footer{
+    justify-content: space-evenly;
+
+}
+
+.Ugnih{
+    border:1rem solid var(--primary-color);
+    border-radius: 30px;
+    background-color: var(--primary-color);
+    color:var(--second-color);
+    margin: 0rem 42rem;
+}
+.Ugnih:hover{
+    border:1rem solid var(--fourth-color);
+    border-radius: 30px;
+    background-color: var(--fourth-color);
+    color:var(--second-color);
+    margin: 0rem 42rem;
+}
+.footer{
+    display: flex; 
+    background-color: var(--primary-color);
+    color:var(--second-color);
+    text-decoration: none;
+    
+}
+aside li{
+    list-style: none;
+    
+}
+aside li a{
+    color:var(--second-color)
+}
+.imageedit{
+    width: 1rem;
+    height: 1rem;
+}
+.asidear{
+    display: flex;
+}
