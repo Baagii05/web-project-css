@@ -1,0 +1,666 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    /* main colors */
+    --main-blue-color: #060348;
+    --main-white-color: #ffffff  ;
+    --main-color-black: #000000;
+    --hover-buttom-color--blue:#000a35;
+    --hover-buttom-color--grey:#808080;
+
+    /* main size's */
+    --border-raduis:15px;
+    --search-form-width:17%;
+    --search-form-height:50px;
+    --search-form-border-width:0.1px;
+    --search-form-radius:28px;
+    --search-form-padding:14px;
+    --navition-font-size:1rem;
+    --navigation-padding:1rem;
+    --page-max-width:120rem;
+
+    /* main size's */
+    --size-xss: 0.5rem;
+    --size-xs: 0.75rem;
+    --size-sm: 0.875rem;
+    --size-base: 1rem;
+    --size-lg: 1.25rem;
+    --size-xl: 1.25rem;
+    --size-2xl: 1.5rem;
+    --size-3xl: 1.875rem;
+    --size-4xl: 2.25rem;
+    --size-5xl: 3rem;
+    --size-6xl: 3.75rem;
+    --size-7xl: 4.5rem;
+    --size-8xl: 6rem;
+    --size-9xl: 8rem;
+    --size-10xl: 10rem;
+
+}
+
+/* removed browsers defualt dimension */
+html { font-size: 10px; }
+
+body{
+    font-family: "Manrope", sans-serif;
+    font-style: normal;
+    
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+    user-select: none;
+}
+
+.container{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-right:auto;
+    padding-left: auto;
+    margin:auto
+
+    
+}
+
+.irish-grover-regular {
+    font-family: "Irish Grover", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@media (min-width: 1555px) {
+    html { font-size: 12px; }
+}
+
+/* xl */
+@media (max-width: 1280px) {
+  html { font-size: 8.2px; }
+}
+
+/* lg */
+@media (max-width: 1024px) {
+  html { font-size: 6.6px; }
+}
+
+/* md */
+@media (max-width: 768px) {
+  html { font-size: 4.9px; }
+}
+
+/* sm */
+@media (max-width: 640px) {
+  html { font-size: 4.1px; }
+}
+
+/* xs */
+@media (max-width: 475px) {
+    html { font-size: 3px; }
+
+  .background-image ul li img{
+      display: none;
+  }
+  .background-image{
+      display: none;
+      background-image: none;
+  }
+  .nav-links a{
+      display: none;
+  }
+  .form-group {
+      flex-direction: column; /* Stack elements vertically */
+      align-items: stretch; /* Make them take full width */
+      width: 100%;
+  }
+  
+  .input-field {
+      width: 100%; 
+      margin-bottom: 1rem; 
+      flex-direction: column;
+
+  }
+  
+  .search-button {
+      width: 100%; /* Make the search button take full width */
+  }
+  .hotel-card {
+      width: 48%; /* Adjust width to 48% for 2 cards per row */
+  }
+  
+  /* Hide the 3rd and 4th hotel cards */
+  .hotel-card:nth-child(4) {
+      display: none; /* Hide these cards */
+  }
+  .footer-container{
+      flex-direction: column;
+      flex-wrap: nowrap;
+  }
+  .footer {
+      flex-direction: column;
+  }
+}
+
+/* start if header */
+.header {
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+    align-items: center;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    justify-content: space-between;
+    background-color: var(--main-blue-color);
+    color: var(--main-white-color);
+    font-size: xx-small;
+
+    
+}
+.header__logo{
+    
+    text-decoration: none;
+    font-family: "Irish Grover", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--main-bg-white-color);
+    padding-left: 2rem;
+    font-size: var(--size-4xl);
+    
+}
+.header__menu{
+    display: flex;
+
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    list-style: none;
+    gap: 7rem;
+    
+}
+.Header__link{
+    font-size: medium;
+    font-size: var(--size-xl);
+    text-decoration: none ;
+    color:var(--main-bg-white-color);
+    letter-spacing: -0.05em;
+    transition: color 0.3s;
+    transition: transform 0.2s ease-in-out;
+
+
+}
+.Header__link:hover {
+    color: var(--hover-buttom-color--grey);
+    transform: scale(1.05);
+}
+.header__profile{
+    display: block;
+    color: var(--main-bg-white-color);
+    width: 3rem;
+    height: 3rem;
+    background-color: var(--main-bg-blue-color);
+    border: none;
+    cursor: pointer;
+
+
+}
+/* end of header */
+
+/* start of body section */
+/* hero section starts here */
+.hero{
+    z-index: 1;
+    background-image: url('homepageimg/landscape-sea-beach-hotel-swimming-pool-resort-225624-wallhere.com.jpg');
+    width: 100%;
+    height: 50rem;
+    background-repeat: no-repeat;
+    
+    background-position: center;
+    background-size:cover;
+    display: flex;
+    
+}
+.hero article{
+    flex: 1;
+    align-items: center;
+    margin: auto;
+    margin-left: 15%;
+}
+.hero ul{
+    
+    flex: 1;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    list-style-type: none;
+    gap:1rem;
+}
+.hero ul li img{
+    width: 17rem; 
+    height: 10rem; 
+    border: 0.1rem solid var(--main--color-black);
+    border-radius: 5px; 
+    
+}
+.hero article h1{
+    font-size: 4rem;
+}
+.hero p{
+    font-size: 2rem;
+}
+
+
+.booking-form {
+    position: flex;
+    background: var(--main-white-color);
+    border: solid 0.1rem;
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2rem;
+    margin-top: -4rem;
+    border: 0.1rem solid var(--main-color-black);
+
+}
+
+.booking-form h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    padding-left: 3.5rem;
+    
+}
+
+.form-group {
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: var();
+    z-index: 2;
+}
+
+.input-field {
+    display: flex;
+    
+    align-items: center;
+    border: 0.1rem solid #ccc;
+    border-radius: 2.8rem;
+    padding: 1rem 1.5rem;
+    background-color: #f6f6f6;
+    width: 25%;
+    
+}
+
+.input-field label {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.input-field i {
+    margin-right: 1rem;
+    font-size: 1.8rem;
+    color: #999;
+}
+
+.input-field input {
+    border: none;
+    background: transparent;
+    width: 100%;
+    font-size: 1.6rem;
+    color: #333;
+    outline: none;
+}
+
+
+.search-button {
+    background-color: var(--main-blue-color);
+    color:white;
+    padding: 1.2rem 2.5rem;
+    border-radius: 2.8rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1.6rem;
+    width: max-content;
+}
+
+.search-button:hover {
+    background-color: #000a35;
+}
+
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+}
+
+.checkbox-group input[type="checkbox"] {
+    margin-right: 0.8rem;
+}
+
+
+
+.hotel-section {
+    margin-bottom: 4rem;
+    text-align: left;
+    width: 90%;
+}
+
+.hotel-section .title h2 {
+    
+    font-size: 3.2rem;
+    margin-bottom: 1rem;
+    padding-left: 9% ;
+    color: var(--main-blue-color);
+}
+
+.hotel-section .title p {
+    font-size: 1.6rem;
+    color: #666;
+    margin-bottom: 3rem;
+    padding-left: 9% 
+}
+
+.hotel-cards {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    gap:4rem;
+    padding-bottom: 4rem;
+
+}
+
+.hotel-card {
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 24%;
+    text-align: left;
+}
+
+.hotel-card img {
+    width: 100%;
+    height: auto;
+}
+
+.hotel-info {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 40%; 
+    padding: 1.5rem;
+}
+
+.hotel-info h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: var(--main-blue-color);
+}
+
+.hotel-info p {
+    font-size: 1.4rem;
+    color: var(--hover-buttom-color--grey);
+    margin-bottom: 0.5rem;
+}
+
+.book-button {
+    margin-top: auto;
+    padding: 1rem 2rem;
+    background-color:var(--main-blue-color); 
+    color: var(--main-white-color);
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+    width: max-content;
+}
+
+.book-button:hover {
+    background-color: var(--hover-buttom-color--grey) 
+}
+
+
+.inspirational-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--main-blue-color);
+    color: var(--main-white-color);
+    padding: 4rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    height: 50rem;
+    
+}
+
+.inspirational-section .text-container {
+    color: var(--main-white-color);
+    font-size: 2.8rem;
+    line-height: 1.4;
+    flex: 2;
+    align-items: center;
+}
+.inspirational-section .text-container h2 {
+    color: var(--main-white-color);
+}
+
+.inspirational-section .image-container {
+    
+    flex-direction: column;
+    gap: 2rem;
+    flex: 1;
+
+
+
+}
+.inspirational-section .image-container2 {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    flex: 1;
+
+
+}
+
+.image-container img {
+    display: f;
+    border-radius: 2rem;
+    object-fit: cover;
+}
+
+
+.weekly_deals_section{
+    background-image: url('homepageimg/838624.jpg');
+    width: 90%;
+    text-align: left;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    background-size: cover;
+    background-position: center;   
+    border-radius: 1.5rem;
+}
+.weekly_deals_section h2{
+    color: var(--main-blue-color);
+    font-size: 3.2rem;
+    margin-bottom: 1rem;
+    padding-left: 9% ; 
+
+}
+/* end of main section */
+footer {
+    background-color:var(--main-blue-color); 
+    color: white;
+    padding: 4rem 0;
+}
+
+.footer-section {
+    width: 100%;
+    max-width: var(--page-max-width);
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer-logo h2 {
+    font-family: "Irish Grover", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: var(--main-white-color);
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+}
+
+.footer-column {
+    flex-basis: 22%;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.footer-column h3 {
+    color: var(--main-white-color);
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    
+    
+    
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 1rem;
+}
+
+.footer-column ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-column a {
+    width: 2rem;
+    height: 2rem;
+    
+}
+.footer-column a img{
+    width: 2rem;
+    height: 2rem;
+    
+}
+
+
+.footer-bottom {
+    display: flex;
+    width: 100%;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 2rem;
+    align-items: center;
+    margin: auto;
+}
+
+.footer-bottom p {
+    font-size: 0.8rem;
+    margin: 0;
+    align-items: center;
+    margin: auto;
+}
+#footer-gmail{
+    text-decoration: none;
+    color: var(--main-bg-white-color);
+}
+
+.containerr {
+    display: flex;
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+.sidebar {
+    width: 20rem;
+    background-color: #f0f0f0;
+    border-radius: 1rem;
+    padding: 2rem;
+}
+
+.sidebar ul {
+    list-style-type: none;
+}
+
+.sidebar ul li {
+    margin-bottom: 1.5rem;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    text-align: center;
+}
+
+.sidebar ul li.active a {
+    background-color: #001F54;
+    color: #fff;
+}
+
+.sidebar ul li a:hover {
+    background-color: #ddd;
+}
+
+.content {
+    flex: 1;
+    margin-left: 4rem;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+}
+
+.content h2 {
+    margin-bottom: 2rem;
+}
+
+.content ol {
+    margin-left: 2rem;
+}
+
+.content ol li {
+    margin-bottom: 1rem;
+}
