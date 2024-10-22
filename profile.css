@@ -1,0 +1,144 @@
+:root {
+    --primary-color: #060348;
+    --second-color: #fff;
+    --thirth-color: #8B8B8B;
+    --fourth-color: #3E58B5;
+    --h1-fontsize:2rem;
+    --h1-fontweight:bold;
+    --h2-fontsize:1.5rem;
+    --h2-fontweight:bold;
+    --h3-fontsize:1.5rem;
+    --h3-fontweight:medium;
+    --h4-fontsize:1.3rem;
+    --p-fontsize:1rem;
+    --p-fontfamily:Manrope;
+    --border-size: 0.0625rem;
+    --border-radius:0.9 rem
+}
+body{
+    font-family: 'Manrope';   
+}
+
+header{
+    width: 100%;
+    height: 60px;
+    margin:auto;
+    padding: 20rem, 10rem;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--primary-color);
+    
+}
+
+.Name{
+    font-size: 50px; 
+    color:var(--second-color);
+    text-decoration: none;
+}
+header ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0px 10px;
+}
+header ul li a {
+    color:var(--second-color);
+    text-transform: none;
+    font-size: var(--p-fontsize);
+    text-decoration: none;
+}  
+
+.twoline{
+    display: flex;
+    justify-content: space-between;
+}
+section{
+    width: 35%;
+    justify-content: left;
+    flex-direction: column;
+    
+}
+.profileshape{
+    border-radius: 100rem;
+    width: 10rem;
+    height: 10rem;
+    margin: 1rem 8rem;  
+}
+.onetimecash{
+    border: 0.1rem solid black;
+    border-radius: 1rem;
+    justify-content: left; 
+    margin: 3rem 0rem;  
+}
+.onetimecash h2 {
+    margin-left: 4%;
+    font-size: var(--h1-fontsize);
+}
+.onetimecash h3 {
+    margin-left: 6%;
+    font-size: var(--h4-fontsize);
+}
+.viewrewards{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 0.5rem;
+    font-size: var(--p-fontsize);
+}
+.arrowsize{
+    width: 1rem;
+    height: 1rem;
+    margin-right: 2rem;
+}
+.onetimecash1{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    border: 0.1rem solid black;
+    border-radius: 1rem; 
+    margin: 3rem 3rem;    
+}
+.textformat{
+    line-height: 0.1rem;
+    margin: 0.1rem 0rem;
+    flex-wrap:wrap ;
+}
+.merge{
+    display: flex;
+    justify-content: space-between;
+}
+.lineHeight {
+    padding: 1rem 0rem;
+    line-height: 0.2rem;
+}
+.onetimecash2{
+
+    align-items: center;
+    justify-content: center;
+    border: 1rem solid var(--primary-color);
+    background-color: var(--primary-color);
+    border-radius: 1rem; 
+    margin: 0rem 1rem; 
+    color:white;
+
+}
+.iconedit{
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+}
+.footer{
+    display: flex; 
+    background-color: var(--primary-color);
+    color:var(--second-color);
+    text-decoration: none;
+    
+}
+aside li{
+    list-style: none;
+    
+}
+aside li a{
+    color:var(--second-color)
+}
